@@ -12,6 +12,7 @@ function currentTime(evt) {
 
   console.log('played video');
 }
-const videoBuffer = JSON.parse(localStorage.getItem('videoplayer-current-time')) ?? 0;
+const videoBuffer =
+  JSON.parse(localStorage.getItem('videoplayer-current-time')) ?? 0;
 
 player.setCurrentTime(videoBuffer);

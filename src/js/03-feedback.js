@@ -33,8 +33,8 @@ function dataInput(evt) {
 }
 
 function formUpdate() {
- const bufferData = JSON.parse(localStorage.getItem(FORM_STORAGE_KEY));
-  if(bufferData){
+  const bufferData = JSON.parse(localStorage.getItem(FORM_STORAGE_KEY));
+  if (bufferData) {
     email.value = bufferData.email;
     message.value = bufferData.message;
   }
